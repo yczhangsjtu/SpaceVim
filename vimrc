@@ -26,3 +26,4 @@ if 1
     execute 'source' fnamemodify(expand('<sfile>'), ':h').'/init.vim'
 endif
 " vim:set et sw=2
+

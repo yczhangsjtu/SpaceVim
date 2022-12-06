@@ -1,0 +1,161 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2021 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "spacecamp"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = false
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = false
+    automatic_update = true
+    filetree_direction = "left"
+    spacevim_wrap_line = true
+    windows_leader = ''
+    enable_language_specific_leader = false
+    windows_smartclose = ''
+    project_auto_root = false
+    project_rooter_patterns = []
+    snippet_engine = "ultisnips"
+    default_indent = 2
+
+# Enable autocomplete layer
+[[layers]]
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+autocomplete_method = "ycm"
+
+[[layers]]
+name = 'shell'
+default_position = 'top'
+default_height = 30
+
+[[layers]]
+name = 'colorscheme'
+
+# [[layers]]
+# name = 'gtags'
+# gtagslabel = "ctags"
+
+[[layers]]
+name = 'git'
+git_plugin = 'git'
+
+[[layers]]
+name = 'lang#latex'
+
+[[layers]]
+name = 'lang#rust'
+racer_cmd = "/Users/yczhang/.cargo/bin/racer"
+# recommended_style = true
+
+[[layers]]
+name = "games"
+
+[[custom_plugins]]
+repo = 'plasticboy/vim-markdown'
+merged = false
+
+[[custom_plugins]]
+repo = 'rust-lang/rust.vim'
+merged = false
+
+[[custom_plugins]]
+repo = 'cespare/vim-toml'
+merged = false
+
+[[custom_plugins]]
+repo = 'dstein64/vim-startuptime'
+merged = false
+
+# [[custom_plugins]]
+# repo = 'codota/tabnine-vim'
+# merged = false
+
+[[custom_plugins]]
+repo = 'github/copilot.vim'
+merged = false
+
+[[custom_plugins]]
+repo = 'vim-syntastic/syntastic'
+merged = false
+
+[[custom_plugins]]
+repo = 'lervag/vimtex'
+merged = false
+
+[[custom_plugins]]
+repo = 'voldikss/vim-floaterm'
+merged = false
+
+[[custom_plugins]]
+repo = 'tpope/vim-surround'
+merged = false
+
+# [[custom_plugins]]
+# repo = 'preservim/nerdcommenter'
+# merged = false
+
+[[custom_plugins]]
+repo = 'tomasiser/vim-code-dark'
+merged = false
+
+[[custom_plugins]]
+repo = 'fenetikm/falcon'
+merged = false
+
+[[custom_plugins]]
+repo = 'KeitaNakamura/neodark.vim'
+merged = false
+
+[[custom_plugins]]
+repo = 'google/vim-colorscheme-primary'
+merged = false
+
+[[custom_plugins]]
+repo = 'jaredgorski/spacecamp'
+merged = false
+
+[[custom_plugins]]
+repo = 'cormacrelf/vim-colors-github'
+merged = false
+
+[[custom_plugins]]
+repo = 'vimwiki/vimwiki'
+merged = false
+
+[[custom_plugins]]
+repo = 'itchyny/calendar.vim'
+merged = false
+
+[[custom_plugins]]
+repo = 'easymotion/vim-easymotion'
+merged = false
+
+[[custom_plugins]]
+repo = 'petRUShka/vim-sage'
+merged = false
+
+[[custom_plugins]]
+repo = 'Chiel92/vim-autoformat'
+merged = false
+
+[[custom_plugins]]
+repo = 'miguelmota/cairo.vim'
+merged = false
